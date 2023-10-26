@@ -23,9 +23,15 @@ Answer the questions below in this README.  Answer these questions as if you are
 
 1. What are roles and claims as they relate to Authentication and Authorization?
 
+In Identity A user has both roles and claims. When a user authenicates themselves by logging in the program can now see what roles and claims that this user has. These roles and claims are then checked against to see if the user is authorized to access certain actions. The roles of a user are the categorys of user that that user is. Generaly roles are managed directly in the database so that a user cannot manipulate them. Some examples of roles are admin, superuser, and default (no role). I recently used a role called "Librarian" and the action decorator `[Authorize(Roles = "Librarian")]` on a book create action to ensure that only librarians can add new books. Claims on the other hand are key value pairs that describe the user. Some examples of claims are age and location. claims are frequently changed so they are managed automaticaly in the program. If you consider a sports book that is required by law not to take bets outside of the state they are regestered in. They need to know where the users are located in order to opperate so the claim called location is created with the location services from the users device.
+
 2. How do cookies play a role in authentication and authorization?
 
+Cookies are used to preserve state in an html program. The state that Identity is concerned about is who is logged in. After a user first authenticats themself by logging in Identity creates cookies that can then authenticate the user in each HTTP request until the user logs out, clearing out the cookies. By having an authenticated user the program can then check that user's roles and claims to check if they are authorized for anything that needs specific authorization.
+
 3. If asked to implement Auth in a new .NET application, would you use the Identity framework?
+
+If I were to implement Auth in a new .NET application I would use Identity framework. Identity would be my choice because it is the Auth framework that I am most comfortable with. Identity does a good job abstracting lots of Auth functionality and after a brief setup you only need to add decorators to actions and controllers to require Auth to use them.
 
 ## Rubric
 
