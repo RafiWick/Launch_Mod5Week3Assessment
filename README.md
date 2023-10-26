@@ -15,9 +15,7 @@ Check out a new branch and complete the following tasks **in order**:
 * 2 points - Create a descriptive pull request and merge this branch into main
 * 2 points - Take a screenshot of a database query result from pgAdmin that clearly shows which users in your database are librarians.  Update this README to include your screenshot below:
 
-  < YOUR SCREENSHOT SHOULD GO HERE >
-
-  
+  <img width="362" alt="Screenshot 2023-10-26 093348" src="https://github.com/RafiWick/Launch_Mod5Week3Assessment/assets/130600943/7cd245ea-f9cc-4288-882b-4d9abd00ca92">
 
 ## Questions (6 points)
 
